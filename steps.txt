@@ -36,3 +36,12 @@ create repo on github
 //delete locally
   git push origin3 -d dev 
   git push origin3 -d test
+
+//add annotated tag 
+  git tag -a v1.4 -m "mytag v1.4"
+//push it remotely 
+ git push origin3 --tags 
+//delete it locally 
+ git tag -d v1.4 -lw 
+//delete it remotely 
+ git push origin3 :ref/tags/v1.4 -lw 
