@@ -1,0 +1,38 @@
+create repo on github 
+-on terminal home/mohamedsambo
+  mkdir lab02
+  cd lab02 
+ 
+  git branch -M main 
+  git remote add origin git@github.com:sambo2021/Cloud42_LAB02.git
+  git branch dev
+  git branch test 
+
+  touch file1 
+  git add . 
+  git commit -m "file1 created" 
+  
+  touch file2
+  git add . 
+  git commit -m "file2 created" 
+  
+  git checkout dev 
+  git push origin3 dev 
+  
+  git push origin3 dev
+  git push origin3 test 
+  
+  ** to check how many branches on remote repo 
+  git branch -r 
+
+  git checkout main 
+  git merge dev
+  git push origin3 main 
+
+//delete remotely
+  git push origin3 :dev 
+  git push origin3 :test
+
+//delete locally
+  git push origin3 -d dev 
+  git push origin3 -d test
